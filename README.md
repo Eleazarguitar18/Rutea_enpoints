@@ -13,15 +13,21 @@ La colección está organizada de manera modular para facilitar la prueba de los
 - **🛣️ Gestión de Rutas (`rutas/`)**:
   - `Ruta optima`: Cálculo de la mejor ruta entre dos puntos geográficos.
   - `Ruta alternativa`: Propuesta de trayectos secundarios.
-  - `crear/edit rutas`: CRUD para la administración de rutas en el sistema.
+  - `crear/edit/listar rutas`: CRUD completo para la administración de rutas.
   - `grafo`: Representación interna de la red de nodos y aristas.
   - `nodo cercano`: Búsqueda de puntos de interés o nodos viales próximos a una coordenada.
+  - **📍 Puntos (`rutas/puntos/`)**:
+    - `cercanos`: Localización de puntos de interés próximos.
+    - `distancia`: Cálculo de distancia métrica entre dos puntos.
 
 - **👥 Usuarios y Personal (`user/`, `persona/`)**:
-  - Gestión de perfiles de usuario y datos personales asociados.
+  - `register`: Registro de nuevos usuarios en la plataforma.
+  - `listar`: Consulta de perfiles de usuario y datos personales (`persona`).
 
-- **📧 Notificaciones (`mail/`)**:
-  - Pruebas para los servicios de mensajería y notificaciones del sistema.
+- **📧 Notificaciones y Seguridad (`mail/`)**:
+  - `send/confirm code`: Flujo de verificación de identidad.
+  - `reset-confirm`: Proceso de recuperación de cuenta.
+  - `correo prueba`: Verificación de servicios SMTP.
 
 ## 🛠️ Cómo empezar
 
@@ -38,6 +44,10 @@ La colección está organizada de manera modular para facilitar la prueba de los
 - **Bruno**: Cliente HTTP open-source basado en archivos locales (Git friendly).
 - **JSON**: Formato de intercambio de datos para los cuerpos de las peticiones.
 - **Bearer Token**: Esquema de autenticación para rutas protegidas.
+
+## 🔗 Repositorio del Proyecto
+Puedes encontrar la colección completa de rutas probadas con Bruno y el historial de pruebas en:
+[Rutea Endpoints - GitHub](https://github.com/Eleazarguitar18/Rutea_enpoints.git)
 
 ---
 *Desarrollado para el proyecto Rutea - Gestión Inteligente de Rutas.*
