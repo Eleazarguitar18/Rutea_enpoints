@@ -1,0 +1,64 @@
+meta {
+  name: edit ruta
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{api}}/rutas/rutas_general/10
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiRWxlYXphciBDcnV6IE1hbWFuaSIsInJvbGVOYW1lIjoidXNlciIsImlhdCI6MTc3NTA2ODA0MiwiZXhwIjoxNzc1MDcxNjQyfQ.1oOo9xZi_b0rf7fWP84demfkVuUF9LwWD8dj9KjH20I
+}
+
+body:json {
+  {
+    "linea": {
+      "numero": "101-MOD",
+      "color": "#FF5733",
+      "descripcion": "Línea 101 Modificada",
+      "id_user_create": 1
+    },
+    "ruta": {
+      "sentido": "IDA-MOD",
+      "orden": "1",
+      "descripcion": "Ruta principal modificada desde el centro",
+      "id_user_create": 1
+    },
+    "puntos": [
+      {
+        "nombre": "Parada Inicial Editada",
+        "tipo": "PARADA",
+        "latitud": -16.500000,
+        "longitud": -68.150000,
+        "distancia_al_siguiente": 450.5,
+        "id_user_create": 1
+      },
+      {
+        "nombre": "Parada Intermedia Nueva",
+        "tipo": "PARADA",
+        "latitud": -16.502000,
+        "longitud": -68.152000,
+        "distancia_al_siguiente": 300.0,
+        "id_user_create": 1
+      },
+      {
+        "nombre": "Parada Final Editada",
+        "tipo": "PARADA",
+        "latitud": -16.505000,
+        "longitud": -68.155000,
+        "distancia_al_siguiente": 0,
+        "id_user_create": 1
+      }
+    ]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

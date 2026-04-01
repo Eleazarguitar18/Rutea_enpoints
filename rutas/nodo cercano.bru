@@ -1,0 +1,29 @@
+meta {
+  name: nodo cercano
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{api}}/rutas/nodo-cercano
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiQW5hIEzDs3BleiBNYXJ0w61uZXoiLCJpYXQiOjE3NzI2NDUyNzcsImV4cCI6MTc3MjY0ODg3N30.viSpRbUThx9ZgJ-JkS_QEhNB2XYS6ryjVSMOaBtEWI4
+}
+
+body:json {
+  {
+    "latOrigen": -16.5051,
+    "lonOrigen": -68.1450,
+    "latDestino": -16.5028,
+    "lonDestino": -68.1360
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

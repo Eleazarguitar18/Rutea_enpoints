@@ -1,0 +1,20 @@
+meta {
+  name: listar una ruta
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{api}}/rutas/10
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiRWxlYXphciBDcnV6IE1hbWFuaSIsInJvbGVOYW1lIjoidXNlciIsImlhdCI6MTc3NTA2ODA0MiwiZXhwIjoxNzc1MDcxNjQyfQ.1oOo9xZi_b0rf7fWP84demfkVuUF9LwWD8dj9KjH20I
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

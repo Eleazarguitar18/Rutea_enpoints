@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Rutea",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

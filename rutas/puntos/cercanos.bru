@@ -1,0 +1,35 @@
+meta {
+  name: cercanos
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{api}}/puntos/cercanos
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: insomnia/12.3.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiQW5hIEzDs3BleiBNYXJ0w61uZXoiLCJpYXQiOjE3NzAxMzc3MzMsImV4cCI6MTc3MDE0MTMzM30.7F9sX1XpbwC3gSBQi2iW7wq_feh4qhzXrdFVO_laSD8
+}
+
+body:json {
+  {
+      "nombre": "Terminal Norte",
+      "tipo": "esquina",
+      "latitud": -16.49,
+      "longitud": -68.15,
+      "orden": 1,
+      "id_user_create": 9
+    }
+}
+
+settings {
+  encodeUrl: true
+}

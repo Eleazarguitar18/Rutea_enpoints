@@ -1,0 +1,39 @@
+meta {
+  name: Ruta optima
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{api}}/rutas/ruta-optima
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: insomnia/12.3.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiRWxlYXphciBDcnV6IE1hbWFuaSIsInJvbGVOYW1lIjoidXNlciIsImlhdCI6MTc3NTA2ODA0MiwiZXhwIjoxNzc1MDcxNjQyfQ.1oOo9xZi_b0rf7fWP84demfkVuUF9LwWD8dj9KjH20I
+}
+
+body:json {
+  {
+    "latOrigen": -16.520000,
+    "lonOrigen": -68.120000,
+    "latDestino": -16.530000,
+    "lonDestino": -68.130000
+  }
+  
+}
+
+vars:pre-request {
+  ~api: http://localhost:3000
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

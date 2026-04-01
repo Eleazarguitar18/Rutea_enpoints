@@ -1,0 +1,23 @@
+meta {
+  name: listar usuario
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api}}/usuario
+  body: none
+  auth: bearer
+}
+
+headers {
+  User-Agent: insomnia/11.5.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsInVzZXJuYW1lIjoiVmFsZXJpYSBPcnRpeiBTdcOhcmV6IiwiaWF0IjoxNzU2MzU0NzUwLCJleHAiOjE3NTYzNTQ4MTB9.4b0r426wW_ZxBY3pwiVSsT1HaNxjFFTNShSvNaT76mg
+}
+
+settings {
+  encodeUrl: true
+}

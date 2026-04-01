@@ -1,0 +1,29 @@
+meta {
+  name: grafo
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{api}}/rutas/debug/grafo
+  body: none
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: insomnia/12.3.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiQW5hIEzDs3BleiBNYXJ0w61uZXoiLCJpYXQiOjE3NzI2NDM1MTgsImV4cCI6MTc3MjY0NzExOH0.Vrr2jWZltXirZbdoT_rks5BunN32gWixH86gdd8CVoc
+}
+
+vars:pre-request {
+  api: http://localhost:3000
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

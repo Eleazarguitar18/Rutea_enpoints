@@ -1,0 +1,45 @@
+meta {
+  name: distancia_puntos
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{api}}/puntos/distancia
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: insomnia/12.3.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiQW5hIEzDs3BleiBNYXJ0w61uZXoiLCJpYXQiOjE3Njk3MjExNjUsImV4cCI6MTc2OTcyNDc2NX0.wRsHw0GKAhoJ_C8wzoYZumlD2iMgsKi1gnAG4kj2FVs
+}
+
+body:json {
+  {
+    "punto1": {
+      "nombre": "Terminal Central",
+      "tipo": "esquina",
+      "latitud": "-16.5",
+      "longitud": "-68.15",
+      "estado": true,
+      "id_user_create": 7
+    },
+    "punto2": {
+      "nombre": "Av. Mariscal",
+      "tipo": "curva",
+      "latitud": "-16.501",
+      "longitud": "-68.152",
+      "estado": true,
+      "id_user_create": 7
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: listar persona
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{api}}/persona
+  body: none
+  auth: bearer
+}
+
+headers {
+  User-Agent: insomnia/11.5.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiTWFyw61hIEZlcm7DoW5kZXogUm9qYXMiLCJpYXQiOjE3NjA5MTc2MTcsImV4cCI6MTc2MDkyMTIxN30.rx8gcrVBf5aYiNff1vM2zYdkBvlppC74rvsUJXsQcZc
+}
+
+settings {
+  encodeUrl: true
+}

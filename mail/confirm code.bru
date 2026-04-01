@@ -1,0 +1,23 @@
+meta {
+  name: confirm code
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{api}}/auth/confirm-code
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email":"hidofir144@availors.com",
+    "code":"F18812"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

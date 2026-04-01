@@ -1,0 +1,40 @@
+{
+  "linea": {
+    "numero": "101-MOD",
+    "color": "#FF5733",
+    "descripcion": "Línea 101 Modificada",
+    "id_user_create": 1
+  },
+  "ruta": {
+    "sentido": "IDA-MOD",
+    "orden": "1",
+    "descripcion": "Ruta principal modificada desde el centro",
+    "id_user_create": 1
+  },
+  "puntos": [
+    {
+      "nombre": "Parada Inicial Editada",
+      "tipo": "PARADA",
+      "latitud": -16.500000,
+      "longitud": -68.150000,
+      "distancia_al_siguiente": 450.5,
+      "id_user_create": 1
+    },
+    {
+      "nombre": "Parada Intermedia Nueva",
+      "tipo": "PARADA",
+      "latitud": -16.502000,
+      "longitud": -68.152000,
+      "distancia_al_siguiente": 300.0,
+      "id_user_create": 1
+    },
+    {
+      "nombre": "Parada Final Editada",
+      "tipo": "PARADA",
+      "latitud": -16.505000,
+      "longitud": -68.155000,
+      "distancia_al_siguiente": 0,
+      "id_user_create": 1
+    }
+  ]
+}

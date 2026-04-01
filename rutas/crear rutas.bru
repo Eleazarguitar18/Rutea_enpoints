@@ -1,0 +1,69 @@
+meta {
+  name: crear rutas
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{api}}/rutas/rutas_general
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: insomnia/12.0.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsInVzZXJuYW1lIjoiRWxlYXphciBDcnV6IE1hbWFuaSIsInJvbGVOYW1lIjoidXNlciIsImlhdCI6MTc3NTA2ODA0MiwiZXhwIjoxNzc1MDcxNjQyfQ.1oOo9xZi_b0rf7fWP84demfkVuUF9LwWD8dj9KjH20I
+}
+
+body:json {
+  {
+    "linea": {
+      "numero": "TEST-SYNC",
+      "color": "#9B59B6",
+      "descripcion": "Línea de prueba para sincronización",
+      "id_user_create": 1
+    },
+    "ruta": {
+      "sentido": "IDA",
+      "orden": "1",
+      "descripcion": "Ruta de prueba San Antonio",
+      "id_user_create": 1
+    },
+    "puntos": [
+      {
+        "nombre": "Punto San Antonio Inicio",
+        "tipo": "PARADA",
+        "latitud": -16.520000,
+        "longitud": -68.120000,
+        "distancia_al_siguiente": 600,
+        "id_user_create": 1
+      },
+      {
+        "nombre": "Punto San Antonio Medio",
+        "tipo": "PARADA",
+        "latitud": -16.525000,
+        "longitud": -68.125000,
+        "distancia_al_siguiente": 600,
+        "id_user_create": 1
+      },
+      {
+        "nombre": "Punto San Antonio Fin",
+        "tipo": "PARADA",
+        "latitud": -16.530000,
+        "longitud": -68.130000,
+        "distancia_al_siguiente": 0,
+        "id_user_create": 1
+      }
+    ]
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

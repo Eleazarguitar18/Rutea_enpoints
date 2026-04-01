@@ -1,0 +1,25 @@
+meta {
+  name: correo prueba
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{api}}/mail
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email":"hidofir144@availors.com",
+    "message":"texto de prueba 2 con plantillas ya listas algo mas de texto para agregar",
+    "subject":"Centrado de texto",
+    "name":"Usuario de Prueba"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

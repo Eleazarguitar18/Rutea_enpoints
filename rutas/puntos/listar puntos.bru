@@ -1,0 +1,24 @@
+meta {
+  name: listar puntos
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{api}}/puntos/listar
+  body: none
+  auth: bearer
+}
+
+headers {
+  User-Agent: insomnia/12.3.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiQW5hIEzDs3BleiBNYXJ0w61uZXoiLCJpYXQiOjE3NzE0MzY4MzAsImV4cCI6MTc3MTQ0MDQzMH0.QvmQ0dRgQsJC6NROsRrRpYI5s2DuvgFqS-CCYY_WuTE
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

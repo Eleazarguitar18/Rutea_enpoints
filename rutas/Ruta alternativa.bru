@@ -1,0 +1,38 @@
+meta {
+  name: Ruta alternativa
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{api}}/rutas/rutas-alternativas
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: insomnia/12.3.0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiRWxlYXphciBDcnV6IE1hbWFuaSIsInJvbGVOYW1lIjoidXNlciIsImlhdCI6MTc3NTA2Mjg3MSwiZXhwIjoxNzc1MDY2NDcxfQ.JFfh5rNvnCbJfl8WgVcOtO2vv7qqLCBZivHDk36Mqxc
+}
+
+body:json {
+  {
+    "latOrigen": -16.5051,
+    "lonOrigen": -68.1450,
+    "latDestino": -16.5028,
+    "lonDestino": -68.1360
+  }
+}
+
+vars:pre-request {
+  ~api: http://localhost:3000
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

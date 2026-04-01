@@ -1,0 +1,22 @@
+meta {
+  name: send code
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{api}}/auth/reset/code
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email":"hidofir144@availors.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
